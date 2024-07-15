@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://app-products-api-e7508e4ab5de.herokuapp.com",
   headers: {
     "Content-Type": "application/json",
   },
