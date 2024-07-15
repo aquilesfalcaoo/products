@@ -130,6 +130,7 @@ const Products = () => {
         setProductDialog(false);
         setProducts(_products);
       } catch (error: any) {
+        setLoading(false);
         const {
           response: {
             data: { message: detail },
@@ -162,7 +163,6 @@ const Products = () => {
     deleteProductById(product.id as number);
     setDeleteProductDialog(false);
     setProducts(_products);
-    setProduct(emptyProduct);
     setTimeout(() => {
       setLoading(false);
     }, 500);
