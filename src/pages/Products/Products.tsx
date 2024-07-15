@@ -321,7 +321,7 @@ const Products = () => {
           globalFilter={globalFilter}
           header={header}
           responsiveLayout="scroll"
-          selectionMode="multiple"
+          selectionMode={null}
         >
           <Column
             field="id"
