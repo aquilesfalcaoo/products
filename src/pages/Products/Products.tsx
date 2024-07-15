@@ -235,7 +235,7 @@ const Products = () => {
       <React.Fragment>
         <Button
           icon="pi pi-pencil"
-          tooltip="Editar"
+          tooltip="Edit"
           tooltipOptions={{ position: "top" }}
           severity="warning"
           className="mr-2"
@@ -243,7 +243,7 @@ const Products = () => {
         />
         <Button
           icon="pi pi-trash"
-          tooltip="Deletar"
+          tooltip="Delete"
           tooltipOptions={{ position: "top" }}
           severity="danger"
           onClick={() => confirmDeleteProduct(rowData)}
@@ -395,7 +395,13 @@ const Products = () => {
             required
             rows={3}
             cols={20}
+            className={classNames({
+              "p-invalid": submitted && !product.description,
+            })}
           />
+          {submitted && !product.description && (
+            <small className="p-error">Description is required.</small>
+          )}
         </div>
 
         <div className="field">
@@ -409,7 +415,13 @@ const Products = () => {
             mode="currency"
             currency="BRL"
             locale="pt-BR"
+            className={classNames({
+              "p-invalid": submitted && !product.price,
+            })}
           />
+          {submitted && !product.price && (
+            <small className="p-error">Price cannot be R$ 0,00.</small>
+          )}
         </div>
       </Dialog>
 
