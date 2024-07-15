@@ -15,7 +15,7 @@
 
 Para rodar esse projeto e clonar essa aplicação, você vai precisar do [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) e [Bun](https://bun.sh/) instalado em sua máquina. A partir de sua linha de comando:
 
-Deploy: https://products-alpha-lilac.vercel.app/
+Deploy: https://products-alpha-lilac.vercel.app/ <br>
 Back-end: https://github.com/aquilesfalcaoo/products-api
 
 ```bash
