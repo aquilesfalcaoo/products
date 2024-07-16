@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" />
 </p>
 
-## Como Usar
+## Instruções
 
 Para rodar esse projeto e clonar essa aplicação, você vai precisar do [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) e [Bun](https://bun.sh/) instalado em sua máquina. A partir de sua linha de comando:
 
